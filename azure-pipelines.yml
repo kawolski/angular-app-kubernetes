@@ -17,6 +17,10 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    npm install docker
+  displayName: 'install docker'
+
+- script: |
     npm install -g @angular/cli
     npm install
     ng build --prod
